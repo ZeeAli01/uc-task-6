@@ -23,35 +23,33 @@ function Dropdown({ dropdownFilter, handleItemUpdate }) {
     }
   }, [filter]);
   function hide() {
-    console.log("Hide clicked");
     const checkboxes = document.querySelectorAll(
       'input[type="checkbox"].checkbox-task1'
     );
-    console.log("checkbox value in hide");
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
         const id = checkbox.parentElement.parentElement.getAttribute("dataId");
-        console.log("ID=", id);
-        //HIDE THAT ID:
+
+        checkbox.checked = false;
         handleItemUpdate(id, "hide");
       }
     });
   }
   function show() {
-    console.log("show clicked");
     const checkboxes = document.querySelectorAll(
       'input[type="checkbox"].checkbox-task1'
     );
-    console.log("checkbox value in hide");
     checkboxes.forEach((checkbox) => {
       if (checkbox.checked) {
         const id = checkbox.parentElement.parentElement.getAttribute("dataId");
-        console.log("ID=", id);
-        //SHOW THAT ID:
+
+        checkbox.checked = false;
+
         handleItemUpdate(id, "show");
       }
     });
   }
+
   return (
     <>
       <div className="dropdown-task1">

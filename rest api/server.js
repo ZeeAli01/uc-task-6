@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const itemRoutes = require("./src/items/routes");
 const cors = require("cors");
 const app = express();
-// app.use(express.json());
+
 //new:
 app.use(cors());
 

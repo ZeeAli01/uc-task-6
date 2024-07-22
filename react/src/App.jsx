@@ -42,7 +42,7 @@ function App() {
         } else if (data.message) {
           console.log("Message:", data.message);
         } else {
-          fetchTableData(filter); // Refresh table data
+          // fetchTableData(filter); // Refresh table data
         }
       })
       .catch((error) => console.error("Error updating item:", error));

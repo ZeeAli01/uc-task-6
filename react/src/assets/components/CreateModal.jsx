@@ -13,13 +13,16 @@ function CreateModal({ handleRowAddButton }) {
 
   return (
     <>
-      <button
-        onClick={handleShow}
-        type="button"
-        className="btn btn-primary add-item-btn"
-      >
-        Add Item
-      </button>
+      <div className="add-item-div">
+        {" "}
+        <button
+          onClick={handleShow}
+          type="button"
+          className="btn btn-primary add-item-btn"
+        >
+          Add Item
+        </button>
+      </div>
 
       <Modal
         show={show}

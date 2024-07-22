@@ -10,8 +10,21 @@
 #table-task1,
 th,
 td {
-  border: 1px solid rgb(0, 0, 0);
+  border: 4px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+  padding: 10px;
+
 }
+
+
+#table-task1 tr:first-child {
+  border-top: 4px solid rgb(0, 0, 0);
+}
+
+#table-task1 tr {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
 
 .link-task1 {
   color: rgb(0, 0, 0);
@@ -82,7 +95,6 @@ td {
 
 #table-task1 {
   margin-top: 10px;
-  margin-left: 180px;
   padding: 10px;
 
 }
@@ -124,8 +136,15 @@ td {
   box-sizing: border-box;
 }
 
-.add-item-btn {
-  margin-left: 200px;
+.add-item-div {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.container-task1 {
+  justify-content: center;
+
+  display: flex;
 }
